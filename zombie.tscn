@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://t8x45ayn6ggm"]
+
+[ext_resource type="Texture2D" uid="uid://bpsi23xadhdmj" path="res://zombie_walk1.png" id="1_gldw4"]
+[ext_resource type="Script" path="res://zombie.gd" id="1_lsnjl"]
+[ext_resource type="Texture2D" uid="uid://bkn1ovir2jdl4" path="res://zombie_walk2.png" id="2_w4ns6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ffn63"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gldw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w4ns6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vve65"]
+size = Vector2(300.813, 207.988)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74tti"]
+size = Vector2(241.976, 335.023)
+
+[node name="zombie" type="CharacterBody2D" groups=["enemy"]]
+position = Vector2(197, 122)
+collision_layer = 2
+collision_mask = 13
+script = ExtResource("1_lsnjl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(422, 203.5)
+scale = Vector2(4.375, 2.24546)
+sprite_frames = SubResource("SpriteFrames_ffn63")
+autoplay = "default"
+frame_progress = 0.0693859
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(419.395, 227)
+rotation = -0.00227587
+shape = SubResource("RectangleShape2D_vve65")
+
+[node name="killzone" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+position = Vector2(418.521, 227.008)
+rotation = 1.5665
+shape = SubResource("RectangleShape2D_74tti")
+
+[connection signal="body_entered" from="killzone" to="." method="_on_killzone_body_entered"]

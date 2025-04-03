@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1oqmi5j2wvrk"]
+
+[ext_resource type="Texture2D" uid="uid://bb0uuyhb8fmdk" path="res://powerup.png" id="1_fcild"]
+[ext_resource type="Script" path="res://powerup.gd" id="1_vch4i"]
+[ext_resource type="AudioStream" uid="uid://b5pceylpvubr" path="res://perfect-street-fighter-sound-effect.mp3" id="3_lfhpw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tvv1"]
+size = Vector2(113, 116)
+
+[node name="powerup" type="Area2D"]
+script = ExtResource("1_vch4i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9, 16.5)
+scale = Vector2(1.27907, 1.31395)
+texture = ExtResource("1_fcild")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8.5, 14)
+shape = SubResource("RectangleShape2D_4tvv1")
+
+[node name="sound2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_lfhpw")
+volume_db = 11.029
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="sound2" to="." method="_on_sound_2_finished"]
