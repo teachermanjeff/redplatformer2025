@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://crugqy7j4jt4a"]
 
-[ext_resource type="Texture2D" uid="uid://dyasm1fruq87r" path="res://assets/img/obstacles/Bird.png" id="1_rxtif"]
-[ext_resource type="Script" path="res://scenes/bird.gd" id="1_sru60"]
+[ext_resource type="Texture2D" uid="uid://dyasm1fruq87r" path="res://assets/imgs/obstacles/Bird.png" id="1_rxtif"]
+[ext_resource type="Script" uid="uid://d3g4jr6f8ylup" path="res://scenes/bird.gd" id="1_sru60"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3nmc2"]
 atlas = ExtResource("1_rxtif")
@@ -57,9 +57,9 @@ animation = &"flying"
 autoplay = "flying"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-38.5, 2.5)
+position = Vector2(-40, -10)
 shape = SubResource("RectangleShape2D_fqt42")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(15, 0)
+position = Vector2(16, -20)
 shape = SubResource("CapsuleShape2D_s8m3f")
