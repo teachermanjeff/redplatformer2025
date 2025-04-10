@@ -11,5 +11,5 @@ scale = Vector2(4, 4)
 texture = SubResource("Resource_jw6ym")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-scale = Vector2(4, 2)
-polygon = PackedVector2Array(20, 14, -2, 1, -10., -5.75, -2.25, -1.2, 10.5, -13.)
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(20, 14, -20, 14, -10.5, -5.75, -2.25, -1.25, 10.5, -13.5)
