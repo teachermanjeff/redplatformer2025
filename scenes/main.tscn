@@ -23,4 +23,4 @@ position = Vector2(576, 324)
 [node name="HUD" parent="." instance=ExtResource("5_cgpie")]
 
 [node name="GameOver" parent="." instance=ExtResource("6_6n2u1")]
-process_mode = 2
+process_mode = 
