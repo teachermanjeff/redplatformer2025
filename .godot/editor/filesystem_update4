@@ -1,14 +1,3 @@
-res://Character/player.tscn
 res://Levels/test_level.tscn
-res://scenes/barrel.tscn
-res://scenes/bg.tscn
-res://scenes/bird.tscn
-res://scenes/dino.tscn
-res://scenes/game_over.tscn
-res://scenes/ground.tscn
-res://scenes/hud.tscn
-res://scenes/lvl2.tscn
+res://Character/player.tscn
 res://scenes/main.tscn
-res://scenes/rock.tscn
-res://scenes/stump.tscn
-res://scenes/main.gd
