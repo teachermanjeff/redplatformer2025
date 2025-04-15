@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SidescrollerQuickstart"
-run/main_scene="res://Levels/test_level.tscn"
+run/main_scene="uid://bju4jxwr7a0pg"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 

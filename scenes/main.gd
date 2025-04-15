@@ -140,7 +140,7 @@ func check_high_score():
 		
 func change_map():
 	if score > 25000:
-		get_tree().change_scene_to_file("res://scenes/test_level.tsc")
+		get_tree().change_scene_to_file("res://scenes/test_level.tscn")
 
 func adjust_difficulty():
 	difficulty = score / SPEED_MODIFIER

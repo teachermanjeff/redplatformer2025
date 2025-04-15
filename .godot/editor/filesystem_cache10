@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744742358
-icon.svg::CompressedTexture2D/CompressedTexture2D::1701750855830309230::1744741872::1744742318::1::::<><><>0<>0<>3429b4362c7d67207119f01aa49a687a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile/TextFile::-1::1744741871::0::1::::<><><>0<>0<><>::
+::res://::1744742868
+icon.svg::CompressedTexture2D::6267807358868807217::1744741872::1744742876::1::::<><><>0<>0<>86a4ab08d4235895bb67670b05f6fa08<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1744741871::0::1::::<><><>0<>0<><>::
 ::res://Art/::1744741999
 ::res://Art/Legacy-Fantasy - High Forest 2.3/::1744742009
 Credit.txt::TextFile/TextFile::-1::1744741932::0::1::::<><><>0<>0<><>::
@@ -88,12 +88,7 @@ rock.png::CompressedTexture2D/CompressedTexture2D::7908483322955529458::17441375
 stump.png::CompressedTexture2D/CompressedTexture2D::4826044796657920035::1744137550::1744309861::1::::<><><>0<>0<>59f7ed932ea100d226f0076946df027d<>res://.godot/imported/stump.png-b023adb710208ca720579294f29006f6.ctex::
 ::res://assets/sound/::1744308872
 jump.wav::AudioStreamWAV/AudioStreamWAV::8427713109939586522::1744137551::1744308872::1::::<><><>0<>0<>8f2dffab96304cf9d4b93ff149971f05<>res://.godot/imported/jump.wav-c8eb752ba01b0a2364b444bd55e6d041.sample::
-::res://Character/::1744742311
-player.gd::GDScript/GDScript::3667362005248668231::1744741970::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::1661849364936379042::1744742374::0::1::::<><><>0<>0<><>::uid://bsiq6fm5tiq7x::::res://Character/player.gd<>uid://cf5vr3rdkcdr0::::res://Art/Legacy-Fantasy - High Forest 2.3/Character/Idle/Idle-Sheet.png<>uid://bvqkoppprkbil::::res://Art/Legacy-Fantasy - High Forest 2.3/Character/Run/Run-Sheet.png<>uid://b1dop62ij8uuy::::res://Art/Legacy-Fantasy - High Forest 2.3/Character/Jump-End/Jump-End-Sheet.png<>uid://bolynyyobgkop::::res://Art/Legacy-Fantasy - High Forest 2.3/Character/Jump-Start/Jump-Start-Sheet.png<>uid://cilbq1jmxocd0::::res://Art/Legacy-Fantasy - High Forest 2.3/Character/Jumlp-All/Jump-All-Sheet.png
-::res://Levels/::1744742011
-test_level.tscn::PackedScene::8026915360369246657::1744742389::0::1::::<><><>0<>0<><>::uid://cnb6vef35n3ad::::res://Art/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png<>uid://cqrqnlx2jpsop::::res://Art/Legacy-Fantasy - High Forest 2.3/Background/Background.png<>uid://xxaoff7gwbrm::::res://Character/player.tscn
-::res://scenes/::1744740473
+::res://scenes/::1744742834
 barrel.tscn::PackedScene::7010789327492751406::1744742390::0::1::::<><><>0<>0<><>::uid://c2na8iq62xim6::::res://assets/imgs/obstacles/barrel.png
 bg.tscn::PackedScene::3460821473438613596::1744742391::0::1::::<><><>0<>0<><>::uid://cysa04ywr7oi3::::res://assets/imgs/background/plx-1.png<>uid://bs8dvkk1vgt5h::::res://assets/imgs/background/plx-2.png<>uid://dt8hsfog1mjyq::::res://assets/imgs/background/plx-3.png<>uid://c2y3w4ij2n3sa::::res://assets/imgs/background/plx-4.png<>uid://c4rlb0tycrggt::::res://assets/imgs/background/plx-5.png
 bird.gd::GDScript/GDScript::-1::1744387784::0::1::::<>Area2D<><>0<>0<><>::
@@ -103,8 +98,10 @@ dino.tscn::PackedScene::2917223642333064235::1744742392::0::1::::<><><>0<>0<><>:
 game_over.tscn::PackedScene::802172542008081756::1744742393::0::1::::<><><>0<>0<><>::uid://s15272omc2m3::::res://assets/fonts/retro.ttf
 ground.tscn::PackedScene::4524411057015233385::1744742394::0::1::::<><><>0<>0<><>::uid://c1oqrqxusukd2::::res://assets/imgs/background/ground.png
 hud.tscn::PackedScene::821977763189034594::1744742394::0::1::::<><><>0<>0<><>::uid://s15272omc2m3::::res://assets/fonts/retro.ttf
-lvl2.tscn::PackedScene::1182937303685719266::1744742395::0::1::::<><><>0<>0<><>::
-main.gd::GDScript/GDScript::5916962375695070283::1744740461::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::3061185939289904392::1744742396::0::1::::<><><>0<>0<><>::uid://cqkhrg042ce2f::::res://scenes/main.gd<>uid://bpkphu8qj137m::::res://scenes/bg.tscn<>uid://b5pwnh1tmyrnl::::res://scenes/ground.tscn<>uid://bhtein0chknfn::::res://scenes/dino.tscn<>uid://lyf4a3sklk1o::::res://scenes/hud.tscn<>uid://lotwuige1aee::::res://scenes/game_over.tscn
+main.gd::GDScript::5916962375695070283::1744742754::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::3061185939289904392::1744742834::0::1::::<><><>0<>0<><>::uid://cqkhrg042ce2f::::res://scenes/main.gd<>uid://bpkphu8qj137m::::res://scenes/bg.tscn<>uid://b5pwnh1tmyrnl::::res://scenes/ground.tscn<>uid://bhtein0chknfn::::res://scenes/dino.tscn<>uid://lyf4a3sklk1o::::res://scenes/hud.tscn<>uid://lotwuige1aee::::res://scenes/game_over.tscn
+player.gd::GDScript::-1::1744741970::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::-1::1744742714::0::1::::<><><>0<>0<><>::
 rock.tscn::PackedScene::1335145453993080953::1744742397::0::1::::<><><>0<>0<><>::uid://dkw6thaio0hfe::::res://assets/imgs/obstacles/rock.png
 stump.tscn::PackedScene::3727625352967846424::1744742397::0::1::::<><><>0<>0<><>::uid://ca01iuenpdkvj::::res://assets/imgs/obstacles/stump.png
+test_level.tscn::PackedScene::-1::1744742714::0::1::::<><><>0<>0<><>::
