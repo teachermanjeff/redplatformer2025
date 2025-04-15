@@ -26,6 +26,7 @@ var ground_height : int
 var game_running : bool
 var last_obs
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_window().size
@@ -125,6 +126,7 @@ func remove_obs(obs):
 func hit_obs(body):
 	if body.name == "Dino":
 		game_over()
+		
 
 func show_score():
 	$HUD.get_node("ScoreLabel").text = "SCORE: " + str(score / SCORE_MODIFIER)
@@ -133,11 +135,16 @@ func check_high_score():
 	if score > high_score:
 		high_score = score
 		$HUD.get_node("HighScoreLabel").text = "HIGH SCORE: " + str(high_score / SCORE_MODIFIER)
+		
+func change_map():
+	if score > 250:
+		get_tree().change_scene_to_file("res://scenes/lvl2.tscn")
 
 func adjust_difficulty():
 	difficulty = score / SPEED_MODIFIER
 	if difficulty > MAX_DIFFICULTY:
 		difficulty = MAX_DIFFICULTY
+
 
 func game_over():
 	check_high_score()
