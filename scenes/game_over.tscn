@@ -2,14 +2,14 @@
 
 [ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="1_ykggm"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtjmy"]
-bg_color = Color(0.172549, 0.564706, 0, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2c4s"]
 bg_color = Color(0, 0.682353, 0.713726, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7wtbp"]
 bg_color = Color(0.6, 0.52549, 0.937255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtjmy"]
+bg_color = Color(0.172549, 0.564706, 0, 1)
 
 [node name="GameOver" type="CanvasLayer"]
 
@@ -27,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_ykggm")
 theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_gtjmy")
 theme_override_styles/hover = SubResource("StyleBoxFlat_x2c4s")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7wtbp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gtjmy")
 text = "RESTART"

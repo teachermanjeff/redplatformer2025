@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c525jycvvecyd"
-path="res://.godot/imported/mort.png-6851b89c0f40968bde02070acb0e6303.ctex"
+uid="uid://ca01iuenpdkvj"
+path="res://.godot/imported/stump.png-b023adb710208ca720579294f29006f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/mort.png"
-dest_files=["res://.godot/imported/mort.png-6851b89c0f40968bde02070acb0e6303.ctex"]
+source_file="res://assets/imgs/obstacles/stump.png"
+dest_files=["res://.godot/imported/stump.png-b023adb710208ca720579294f29006f6.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://bhtein0chknfn"]
 
-[ext_resource type="Texture2D" uid="uid://c525jycvvecyd" path="res://assets/img/mort.png" id="1_0g0lj"]
-[ext_resource type="Script" path="res://scenes/dino.gd" id="1_1stpw"]
+[ext_resource type="Texture2D" uid="uid://c525jycvvecyd" path="res://assets/imgs/mort.png" id="1_0g0lj"]
+[ext_resource type="Script" uid="uid://bh8x165i5lie4" path="res://scenes/dino.gd" id="1_1stpw"]
 [ext_resource type="AudioStream" uid="uid://dscpg6m666dta" path="res://assets/sound/jump.wav" id="2_60go1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yd527"]
@@ -147,10 +147,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_whux2"]
-size = Vector2(10, 16)
+size = Vector2(9.75, 13.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t1b5m"]
-size = Vector2(10, 14)
+size = Vector2(7.625, 10.875)
 
 [node name="Dino" type="CharacterBody2D"]
 z_index = 1
@@ -164,11 +164,11 @@ animation = &"duck"
 autoplay = "idle"
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
+position = Vector2(0.125, 0.1875)
 shape = SubResource("RectangleShape2D_whux2")
 
 [node name="DuckCol" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 1)
+position = Vector2(0.0625, -0.5625)
 shape = SubResource("RectangleShape2D_t1b5m")
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]
