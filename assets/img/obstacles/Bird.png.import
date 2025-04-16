@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2na8iq62xim6"
-path="res://.godot/imported/barrel.png-f60e4bc90214f8af9b7aeb42bd0578c5.ctex"
+uid="uid://dyasm1fruq87r"
+path="res://.godot/imported/Bird.png-2f7f028637803a2906ea8b2cbb03daa8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imgs/obstacles/barrel.png"
-dest_files=["res://.godot/imported/barrel.png-f60e4bc90214f8af9b7aeb42bd0578c5.ctex"]
+source_file="res://assets/img/obstacles/Bird.png"
+dest_files=["res://.godot/imported/Bird.png-2f7f028637803a2906ea8b2cbb03daa8.ctex"]
 
 [params]
 

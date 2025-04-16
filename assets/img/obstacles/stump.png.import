@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs8dvkk1vgt5h"
-path="res://.godot/imported/plx-2.png-ddd450195c534c79f1a73d47c003f2af.ctex"
+uid="uid://ca01iuenpdkvj"
+path="res://.godot/imported/stump.png-6bf9e4892733b564aec3e342e1a8d2b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imgs/background/plx-2.png"
-dest_files=["res://.godot/imported/plx-2.png-ddd450195c534c79f1a73d47c003f2af.ctex"]
+source_file="res://assets/img/obstacles/stump.png"
+dest_files=["res://.godot/imported/stump.png-6bf9e4892733b564aec3e342e1a8d2b0.ctex"]
 
 [params]
 
