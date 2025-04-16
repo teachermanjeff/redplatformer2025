@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=3 uid="uid://bkxyu6tclyuao"]
+
+[ext_resource type="Script" uid="uid://cqkhrg042ce2f" path="res://scenes/main.gd" id="1_h0pde"]
+[ext_resource type="PackedScene" uid="uid://bpkphu8qj137m" path="res://scenes/bg.tscn" id="2_k4fie"]
+[ext_resource type="PackedScene" uid="uid://b5pwnh1tmyrnl" path="res://scenes/ground.tscn" id="3_dcqlu"]
+[ext_resource type="PackedScene" uid="uid://bhtein0chknfn" path="res://scenes/dino.tscn" id="4_ng586"]
+[ext_resource type="PackedScene" uid="uid://lyf4a3sklk1o" path="res://scenes/hud.tscn" id="5_1x3gt"]
+[ext_resource type="PackedScene" uid="uid://lotwuige1aee" path="res://scenes/game_over.tscn" id="6_48n8l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
+size = Vector2(9e+08, 900)
+
+[node name="Main" type="Node"]
+script = ExtResource("1_h0pde")
+
+[node name="Bg" parent="." instance=ExtResource("2_k4fie")]
+
+[node name="Ground" parent="." instance=ExtResource("3_dcqlu")]
+
+[node name="Dino" parent="." instance=ExtResource("4_ng586")]
+position = Vector2(153, 489)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="HUD" parent="." instance=ExtResource("5_1x3gt")]
+
+[node name="GameOver" parent="." instance=ExtResource("6_48n8l")]
+process_mode = 2
+
+[node name="jump botton" type="TouchScreenButton" parent="."]
+position = Vector2(46832, 338)
+shape = SubResource("RectangleShape2D_tefeu")
+action = "jump"
