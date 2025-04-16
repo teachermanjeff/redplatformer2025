@@ -139,8 +139,8 @@ func check_high_score():
 		$HUD.get_node("HighScoreLabel").text = "HIGH SCORE: " + str(high_score / SCORE_MODIFIER)
 		
 func change_map():
-	if score > 25000:
-		get_tree().change_scene_to_file("res://scenes/lvl2.tscn")
+	if score > 250:
+		get_tree().change_scene_to_file("res://scenes/lvl1.tscn")
 
 func adjust_difficulty():
 	difficulty = score / SPEED_MODIFIER

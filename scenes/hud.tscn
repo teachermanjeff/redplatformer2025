@@ -27,7 +27,10 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_xwrdd")
 theme_override_font_sizes/font_size = 40
-text = "PRESS SPACE TO PLAY"
+text = "YOU REACHED LVL 2!
+
+REACH 5000 POINTS TO ADVANCE
+GOOD LUCK PLAYER!"
 horizontal_alignment = 1
 vertical_alignment = 1
 

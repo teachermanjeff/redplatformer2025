@@ -25,6 +25,9 @@ position = Vector2(576, 324)
 
 [node name="HUD" parent="." instance=ExtResource("5_cgpie")]
 
+[node name="StartLabel" parent="HUD" index="1"]
+text = "PRESS SPACE TO START!"
+
 [node name="GameOver" parent="." instance=ExtResource("6_6n2u1")]
 process_mode = 2
 
@@ -32,3 +35,5 @@ process_mode = 2
 position = Vector2(46832, 338)
 shape = SubResource("RectangleShape2D_tefeu")
 action = "jump"
+
+[editable path="HUD"]
