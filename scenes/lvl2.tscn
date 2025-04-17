@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bklxgnj2arjdh"]
+[gd_scene load_steps=11 format=3 uid="uid://bklxgnj2arjdh"]
 
 [ext_resource type="Script" uid="uid://cqkhrg042ce2f" path="res://scenes/main.gd" id="1_nb5j2"]
 [ext_resource type="PackedScene" uid="uid://bpkphu8qj137m" path="res://scenes/bg.tscn" id="2_r7wj8"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://477bpbvrr7gf" path="res://assets/next level/background_layer_3.png" id="3_hnnuc"]
 [ext_resource type="Texture2D" uid="uid://c8dh18w7a1lkj" path="res://assets/next level/background_layer_1.png" id="4_c8sub"]
 [ext_resource type="PackedScene" uid="uid://bhtein0chknfn" path="res://scenes/dino.tscn" id="4_hnnuc"]
-[ext_resource type="Texture2D" uid="uid://wrx8r7ccxbna" path="res://assets/next level/grounddyyy.png" id="4_hva3n"]
 [ext_resource type="PackedScene" uid="uid://lyf4a3sklk1o" path="res://scenes/hud.tscn" id="5_c8sub"]
 [ext_resource type="Texture2D" uid="uid://bc06listxygx4" path="res://assets/next level/background_layer_2.png" id="5_hva3n"]
 [ext_resource type="PackedScene" uid="uid://lotwuige1aee" path="res://scenes/game_over.tscn" id="6_hva3n"]
@@ -28,9 +27,7 @@ scale = Vector2(3.6, 3.06667)
 texture = ExtResource("3_hnnuc")
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer2" index="0"]
-position = Vector2(-7.62939e-06, 551)
-scale = Vector2(2.63326, 1.34722)
-texture = ExtResource("4_hva3n")
+texture = null
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer3" index="0"]
 scale = Vector2(3.6, 3.06111)
@@ -43,11 +40,11 @@ texture = ExtResource("5_hva3n")
 [node name="Ground" parent="." instance=ExtResource("3_g6uqv")]
 
 [node name="Sprite2D" parent="Ground" index="0"]
-scale = Vector2(5.21412, 1.33333)
+scale = Vector2(2.01847, 1)
 texture = null
 
 [node name="CollisionShape2D" parent="Ground" index="1"]
-position = Vector2(1145, 595)
+position = Vector2(1144.5, 599.5)
 
 [node name="Dino" parent="." instance=ExtResource("4_hnnuc")]
 position = Vector2(153, 489)
