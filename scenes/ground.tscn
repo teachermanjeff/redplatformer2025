@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c1oqrqxusukd2" path="res://assets/imgs/background/ground.png" id="1_achns"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_te2nw"]
-size = Vector2(2304, 97)
+size = Vector2(2289, 97)
 
 [node name="Ground" type="StaticBody2D"]
 
