@@ -33,4 +33,6 @@ position = Vector2(46832, 338)
 shape = SubResource("RectangleShape2D_tefeu")
 action = "jump"
 
+[editable path="Bg"]
+[editable path="Ground"]
 [editable path="HUD"]
