@@ -1,12 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://bklxgnj2arjdh"]
+[gd_scene load_steps=11 format=3 uid="uid://bklxgnj2arjdh"]
 
 [ext_resource type="Script" uid="uid://cqkhrg042ce2f" path="res://scenes/main.gd" id="1_nb5j2"]
 [ext_resource type="PackedScene" uid="uid://bpkphu8qj137m" path="res://scenes/bg.tscn" id="2_r7wj8"]
 [ext_resource type="PackedScene" uid="uid://b5pwnh1tmyrnl" path="res://scenes/ground.tscn" id="3_g6uqv"]
-[ext_resource type="Texture2D" uid="uid://bd1sbi86p7dd8" path="res://assets/next level/sky.png" id="3_hnnuc"]
+[ext_resource type="Texture2D" uid="uid://y4mr4au6fnfm" path="res://assets/next level/background_layer_3.png" id="3_hnnuc"]
+[ext_resource type="Texture2D" uid="uid://cdps27od61w5y" path="res://assets/next level/background_layer_1.png" id="4_c8sub"]
 [ext_resource type="PackedScene" uid="uid://bhtein0chknfn" path="res://scenes/dino.tscn" id="4_hnnuc"]
 [ext_resource type="PackedScene" uid="uid://lyf4a3sklk1o" path="res://scenes/hud.tscn" id="5_c8sub"]
-[ext_resource type="Texture2D" uid="uid://d3vndwl4p1q8s" path="res://assets/next level/ground.png" id="5_hva3n"]
+[ext_resource type="Texture2D" uid="uid://0ls0q4xaybwp" path="res://assets/next level/background_layer_2.png" id="5_hva3n"]
 [ext_resource type="PackedScene" uid="uid://lotwuige1aee" path="res://scenes/game_over.tscn" id="6_hva3n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
@@ -18,26 +19,29 @@ script = ExtResource("1_nb5j2")
 [node name="Bg" parent="." instance=ExtResource("2_r7wj8")]
 
 [node name="Sprite2D" parent="Bg" index="0"]
-texture = ExtResource("3_hnnuc")
+scale = Vector2(3.66563, 3.62778)
+texture = null
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer" index="0"]
+scale = Vector2(3.6, 3.06667)
 texture = ExtResource("3_hnnuc")
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer2" index="0"]
-texture = ExtResource("3_hnnuc")
+texture = null
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer3" index="0"]
-texture = ExtResource("3_hnnuc")
+scale = Vector2(3.6, 3.06111)
+texture = ExtResource("4_c8sub")
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer4" index="0"]
-scale = Vector2(1.41585, 2.39744)
-texture = ExtResource("3_hnnuc")
+scale = Vector2(3.59375, 3.04444)
+texture = ExtResource("5_hva3n")
 
 [node name="Ground" parent="." instance=ExtResource("3_g6uqv")]
 
 [node name="Sprite2D" parent="Ground" index="0"]
 scale = Vector2(2.01847, 1)
-texture = ExtResource("5_hva3n")
+texture = null
 
 [node name="CollisionShape2D" parent="Ground" index="1"]
 position = Vector2(1144.5, 599.5)
