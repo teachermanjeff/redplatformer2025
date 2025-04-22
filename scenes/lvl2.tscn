@@ -55,12 +55,12 @@ position = Vector2(1143, 599.5)
 shape = SubResource("RectangleShape2D_te2nw")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Ground"]
-position = Vector2(1143, 599.5)
+position = Vector2(1152, 603)
 shape = SubResource("RectangleShape2D_te2nw")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Ground"]
-position = Vector2(1723, 598)
-scale = Vector2(2.60251, 1.31944)
+position = Vector2(1723.63, 601.75)
+scale = Vector2(2.59966, 1.42361)
 texture = ExtResource("7_c8sub")
 
 [node name="Dino" parent="." instance=ExtResource("4_hnnuc")]
