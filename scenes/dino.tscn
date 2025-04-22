@@ -1,8 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://bhtein0chknfn"]
+[gd_scene load_steps=23 format=3 uid="uid://bhtein0chknfn"]
 
 [ext_resource type="Texture2D" uid="uid://c525jycvvecyd" path="res://assets/imgs/mort.png" id="1_0g0lj"]
 [ext_resource type="Script" uid="uid://bh8x165i5lie4" path="res://scenes/dino.gd" id="1_1stpw"]
-[ext_resource type="AudioStream" path="res://sound/jump.wav" id="2_60go1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yd527"]
 atlas = ExtResource("1_0g0lj")
@@ -172,5 +171,4 @@ position = Vector2(0.0625, -0.5625)
 shape = SubResource("RectangleShape2D_t1b5m")
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_60go1")
 volume_db = -25.0
