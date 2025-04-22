@@ -34,11 +34,11 @@ texture = ExtResource("3_hnnuc")
 texture = null
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer3" index="0"]
-scale = Vector2(3.6, 3.06111)
+scale = Vector2(3.61875, 3.06111)
 texture = ExtResource("4_c8sub")
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer4" index="0"]
-scale = Vector2(3.59375, 3.04444)
+scale = Vector2(3.62812, 3.04444)
 texture = ExtResource("5_hva3n")
 
 [node name="Ground" parent="." instance=ExtResource("3_g6uqv")]
@@ -59,7 +59,7 @@ position = Vector2(1143, 599.5)
 shape = SubResource("RectangleShape2D_te2nw")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Ground"]
-position = Vector2(1715.75, 602)
+position = Vector2(1723, 598)
 scale = Vector2(2.60251, 1.31944)
 texture = ExtResource("7_c8sub")
 
