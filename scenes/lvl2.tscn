@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://bklxgnj2arjdh"]
 
-[ext_resource type="Script" uid="uid://cqkhrg042ce2f" path="res://scenes/main.gd" id="1_nb5j2"]
+[ext_resource type="Script" uid="uid://8bt7uflbdq5m" path="res://scenes/main2.gd" id="1_c8sub"]
 [ext_resource type="PackedScene" uid="uid://bpkphu8qj137m" path="res://scenes/bg.tscn" id="2_r7wj8"]
 [ext_resource type="PackedScene" uid="uid://b5pwnh1tmyrnl" path="res://scenes/ground.tscn" id="3_g6uqv"]
 [ext_resource type="Texture2D" uid="uid://477bpbvrr7gf" path="res://assets/next level/background_layer_3.png" id="3_hnnuc"]
@@ -18,7 +18,7 @@ size = Vector2(2286, 97)
 size = Vector2(9e+08, 900)
 
 [node name="Main2" type="Node"]
-script = ExtResource("1_nb5j2")
+script = ExtResource("1_c8sub")
 
 [node name="Bg" parent="." instance=ExtResource("2_r7wj8")]
 
