@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cu72j826pir33"]
+
+[ext_resource type="Texture2D" uid="uid://268t7e5ci653" path="res://assets/next level obstacles/mushroom_red.png" id="1_hjq04"]
+
+[node name="Rock" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(9.5, 6)
+scale = Vector2(1.32099, 1.07071)
+texture = ExtResource("1_hjq04")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(40, 2)
+scale = Vector2(3, 3)
+polygon = PackedVector2Array(1.66667, -11.3333, -3.33333, 18.3333, -17, 18.3333, -22.3333, -12.6667)
