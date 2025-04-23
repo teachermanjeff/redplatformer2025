@@ -17,7 +17,7 @@ size = Vector2(2286, 97)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
 size = Vector2(9e+08, 900)
 
-[node name="Main2" type="Node"]
+[node name="Main" type="Node"]
 script = ExtResource("1_nb5j2")
 
 [node name="Bg" parent="." instance=ExtResource("2_r7wj8")]
@@ -27,41 +27,41 @@ scale = Vector2(3.66563, 3.62778)
 texture = null
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer" index="0"]
-scale = Vector2(3.68125, 3.25)
+scale = Vector2(3.6, 3.06667)
 texture = ExtResource("3_hnnuc")
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer2" index="0"]
 texture = null
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer3" index="0"]
-scale = Vector2(3.71563, 3.27222)
+scale = Vector2(3.61875, 3.06111)
 texture = ExtResource("4_c8sub")
 
 [node name="Sprite2D" parent="Bg/ParallaxLayer4" index="0"]
-scale = Vector2(3.70937, 3.36111)
+scale = Vector2(3.62812, 3.2)
 texture = ExtResource("5_hva3n")
 
 [node name="Ground" parent="." instance=ExtResource("3_g6uqv")]
 
 [node name="Sprite2D" parent="Ground" index="0"]
-position = Vector2(-14, 563)
-scale = Vector2(2.66059, 1.65278)
+position = Vector2(3, 578)
+scale = Vector2(2.6697, 1.68056)
 texture = ExtResource("7_c8sub")
 
 [node name="CollisionShape2D" parent="Ground" index="1"]
-position = Vector2(1145, 611)
+position = Vector2(1318, 1196)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Ground"]
-position = Vector2(1144, 615)
+position = Vector2(894, 1157)
 shape = SubResource("RectangleShape2D_te2nw")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Ground"]
-position = Vector2(1126, 613)
+position = Vector2(1167, 625)
 shape = SubResource("RectangleShape2D_te2nw")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Ground"]
-position = Vector2(1734, 622.188)
-scale = Vector2(2.68337, 1.66146)
+position = Vector2(1738.5, 636)
+scale = Vector2(2.64009, 1.68403)
 texture = ExtResource("7_c8sub")
 
 [node name="Dino" parent="." instance=ExtResource("4_hnnuc")]
