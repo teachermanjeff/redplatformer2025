@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxy4lmgywtms6"]
+
+[ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="1_47rfs"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 183.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("1_47rfs")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -392.0
+offset_top = -176.0
+offset_right = 404.0
+offset_bottom = 37.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_47rfs")
+theme_override_font_sizes/font_size = 40
+text = "Congratulations! 
+You reached the end
+and have completed the game!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScoreLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -747.0
+offset_top = 402.0
+offset_right = -429.0
+offset_bottom = 456.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_47rfs")
+theme_override_font_sizes/font_size = 40
+text = "HIGH SCORE: "
+horizontal_alignment = 1
+vertical_alignment = 1
