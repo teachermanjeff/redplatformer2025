@@ -14,6 +14,7 @@ const DINO_START_POS := Vector2i(150, 485)
 const CAM_START_POS := Vector2i(576, 324)
 var difficulty
 const MAX_DIFFICULTY : int = 2
+var score : int
 const SCORE_MODIFIER : int = 10
 var high_score : int
 var speed : float
@@ -35,7 +36,7 @@ func _ready():
 
 func new_game():
 	#reset variables
-	globals.score = 0
+	score = 0
 	show_score()
 	game_running = false
 	get_tree().paused = false
@@ -60,7 +61,7 @@ func new_game():
 func _process(delta):
 	if game_running:
 		#speed up and adjust difficulty
-		speed = START_SPEED + globals.score / SPEED_MODIFIER
+		speed = START_SPEED + score / SPEED_MODIFIER
 		if speed > MAX_SPEED:
 			speed = MAX_SPEED
 		adjust_difficulty()
@@ -70,15 +71,12 @@ func _process(delta):
 		
 		change_map()
 		
-		win()
-
-		
 		#move dino and camera
 		$Dino.position.x += speed
 		$Camera2D.position.x += speed
 		
 		#update score
-		globals.score += speed
+		score += speed
 		show_score()
 		
 		#update ground position
@@ -96,15 +94,15 @@ func _process(delta):
 
 func generate_obs():
 	#generate ground obstacles
-	if obstacles.is_empty() or last_obs.position.x < globals.score + randi_range(300, 500):
+	if obstacles.is_empty() or last_obs.position.x < score + randi_range(300, 500):
 		var obs_type = obstacle_types[randi() % obstacle_types.size()]
 		var obs
 		var max_obs = difficulty + 1
- 		for i in range(randi() % max_obs + 1):
+		for i in range(randi() % max_obs + 1):
 			obs = obs_type.instantiate()
 			var obs_height = obs.get_node("Sprite2D").texture.get_height()
 			var obs_scale = obs.get_node("Sprite2D").scale
-			var obs_x : int = screen_size.x + globals.score + 100 + (i * 100)
+			var obs_x : int = screen_size.x + score + 100 + (i * 100)
 			var obs_y : int = screen_size.y - ground_height - (obs_height * obs_scale.y / 2) + 5
 			last_obs = obs
 			add_obs(obs, obs_x, obs_y)
@@ -113,7 +111,7 @@ func generate_obs():
 			if (randi() % 2) == 0:
 				#generate bird obstacles
 				obs = bird_scene.instantiate()
-				var obs_x : int = screen_size.x + globals.score + 100
+				var obs_x : int = screen_size.x + score + 100
 				var obs_y : int = bird_heights[randi() % bird_heights.size()]
 				add_obs(obs, obs_x, obs_y)
 
@@ -133,25 +131,21 @@ func hit_obs(body):
 		
 
 func show_score():
-	$HUD.get_node("ScoreLabel").text = "SCORE: " + str(globals.score / SCORE_MODIFIER)
+	$HUD.get_node("ScoreLabel").text = "SCORE: " + str(score / SCORE_MODIFIER)
 
 func check_high_score():
-	if globals.score > high_score:
-		high_score = globals.score
+	if score > high_score:
+		high_score = score
 		$HUD.get_node("HighScoreLabel").text = "HIGH SCORE: " + str(high_score / SCORE_MODIFIER)
 		
 func change_map():
-	if globals.score > 25000:
+	if score > 2500:
 		get_tree().change_scene_to_file("res://scenes/lvl2.tscn")
 
 func adjust_difficulty():
-	difficulty = globals.score / SPEED_MODIFIER
+	difficulty = score / SPEED_MODIFIER
 	if difficulty > MAX_DIFFICULTY:
 		difficulty = MAX_DIFFICULTY
-		
-func win():
-	if globals.score > 50000:
-		get_tree().change_scene_to_file("res://scenes/winscreen.tscn")
 		
 		
 
