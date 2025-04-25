@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxy4lmgywtms6"]
+[gd_scene load_steps=3 format=3 uid="uid://bxy4lmgywtms6"]
 
 [ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="1_47rfs"]
+[ext_resource type="Texture2D" uid="uid://6cffr0pag0fc" path="res://assets/background/background.png" id="2_wg0yv"]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -12,16 +13,25 @@ theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+top_level = true
+position = Vector2(570.5, 320.75)
+scale = Vector2(0.979642, 0.943515)
+texture = ExtResource("2_wg0yv")
+
 [node name="StartLabel" type="Label" parent="."]
+top_level = true
+visibility_layer = 529
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -392.0
-offset_top = -176.0
-offset_right = 404.0
-offset_bottom = 37.0
+offset_left = -409.0
+offset_top = -157.0
+offset_right = 387.0
+offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_47rfs")
@@ -43,6 +53,5 @@ offset_bottom = 456.0
 grow_horizontal = 0
 theme_override_fonts/font = ExtResource("1_47rfs")
 theme_override_font_sizes/font_size = 40
-text = "HIGH SCORE: "
 horizontal_alignment = 1
 vertical_alignment = 1
