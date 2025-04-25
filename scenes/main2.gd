@@ -1,9 +1,9 @@
 extends Node
 
 #preload obstacles
-var stump_scene = preload("res://scenes/stump.tscn")
-var rock_scene = preload("res://scenes/rock.tscn")
-var barrel_scene = preload("res://scenes/barrel.tscn")
+var stump_scene = preload("res://scenes/crystal2.tscn")
+var rock_scene = preload("res://scenes/crystal3.tscn")
+var barrel_scene = preload("res://scenes/crystal4.tscn")
 var bird_scene = preload("res://scenes/bird.tscn")
 var obstacle_types := [stump_scene, rock_scene, barrel_scene]
 var obstacles : Array
@@ -139,8 +139,8 @@ func check_high_score():
 		$HUD.get_node("HighScoreLabel").text = "HIGH SCORE: " + str(high_score / SCORE_MODIFIER)
 		
 func change_map():
-	if score > 25000:
-		get_tree().change_scene_to_file("res://scenes/lvl2.tscn")
+	if score > 50000:
+		get_tree().change_scene_to_file("res://scenes/winscreen.tscn")
 
 func adjust_difficulty():
 	difficulty = score / SPEED_MODIFIER

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://byuq364bxjqh8"]
+
+[ext_resource type="Texture2D" uid="uid://c4qqiirw3vcsw" path="res://assets/next level obstacles/crystal_green2.png" id="1_w8rvo"]
+
+[node name="Stump" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 0.750005)
+scale = Vector2(1.43689, 1.38816)
+texture = ExtResource("1_w8rvo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(16.75, 13.75, -20, 14, -10.25, -0.75, -0.75, -12, 11, -6.5)

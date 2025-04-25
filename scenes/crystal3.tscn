@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3iiegxkagchh"]
+
+[ext_resource type="Texture2D" uid="uid://xs06p26v7oqj" path="res://assets/next level obstacles/crystal_blue2.png" id="1_acfmd"]
+
+[node name="Stump" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(4.75, 2.25)
+scale = Vector2(1.75658, 1.40625)
+texture = ExtResource("1_acfmd")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(17.25, 13.5, -15.25, 13.75, -8.5, -4.5, 1.5, -12.5, 8, -7.75)
