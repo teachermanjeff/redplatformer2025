@@ -76,9 +76,14 @@ position = Vector2(576, 324)
 process_mode = 2
 
 [node name="jump botton" type="TouchScreenButton" parent="."]
-position = Vector2(46832, 338)
+position = Vector2(46832, -120)
 shape = SubResource("RectangleShape2D_tefeu")
 action = "jump"
+
+[node name="jump botton2" type="TouchScreenButton" parent="."]
+position = Vector2(46832, 780)
+shape = SubResource("RectangleShape2D_tefeu")
+action = "duck"
 
 [editable path="Bg"]
 [editable path="Ground"]
