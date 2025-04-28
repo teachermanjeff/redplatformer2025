@@ -68,6 +68,7 @@ func _process(delta):
 		
 		#generate obstacles
 		generate_obs()
+	
 		
 		change_map()
 		
@@ -146,10 +147,9 @@ func adjust_difficulty():
 	difficulty = score / SPEED_MODIFIER
 	if difficulty > MAX_DIFFICULTY:
 		difficulty = MAX_DIFFICULTY
+	
 		
 		
-
-
 func game_over():
 	check_high_score()
 	get_tree().paused = true

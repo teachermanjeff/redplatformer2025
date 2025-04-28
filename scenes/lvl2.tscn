@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bklxgnj2arjdh"]
+[gd_scene load_steps=14 format=3 uid="uid://bklxgnj2arjdh"]
 
 [ext_resource type="Script" uid="uid://8bt7uflbdq5m" path="res://scenes/main2.gd" id="1_c8sub"]
 [ext_resource type="PackedScene" uid="uid://bpkphu8qj137m" path="res://scenes/bg.tscn" id="2_r7wj8"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bc06listxygx4" path="res://assets/next level/background_layer_2.png" id="5_hva3n"]
 [ext_resource type="PackedScene" uid="uid://lotwuige1aee" path="res://scenes/game_over.tscn" id="6_hva3n"]
 [ext_resource type="Texture2D" uid="uid://btb0vyp06j6ef" path="res://assets/next level/grounddyyy.png" id="7_c8sub"]
+[ext_resource type="AudioStream" uid="uid://dscpg6m666dta" path="res://assets/sound/jump.wav" id="11_hva3n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_te2nw"]
 size = Vector2(2286, 97)
@@ -79,6 +80,9 @@ process_mode = 2
 position = Vector2(46832, 338)
 shape = SubResource("RectangleShape2D_tefeu")
 action = "jump"
+
+[node name="sounds" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_hva3n")
 
 [editable path="Bg"]
 [editable path="Ground"]
