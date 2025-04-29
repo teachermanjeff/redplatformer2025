@@ -7,7 +7,7 @@ var barrel_scene = preload("res://scenes/crystal4.tscn")
 var bird_scene = preload("res://scenes/bird.tscn")
 var obstacle_types := [stump_scene, rock_scene, barrel_scene]
 var obstacles : Array
-var bird_heights := [200, 390]
+var bird_heights := [190, 390]
 
 #game variables
 const DINO_START_POS := Vector2i(150, 485)
