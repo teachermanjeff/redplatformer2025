@@ -163,11 +163,11 @@ animation = &"duck"
 autoplay = "idle"
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
-position = Vector2(0.125, 0.1875)
+position = Vector2(2.375, 0.25)
 shape = SubResource("RectangleShape2D_whux2")
 
 [node name="DuckCol" type="CollisionShape2D" parent="."]
-position = Vector2(0.0625, -0.5625)
+position = Vector2(2.5, 0.25)
 shape = SubResource("RectangleShape2D_t1b5m")
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]

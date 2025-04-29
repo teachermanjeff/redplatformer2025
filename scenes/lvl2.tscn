@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bklxgnj2arjdh"]
+[gd_scene load_steps=14 format=3 uid="uid://bklxgnj2arjdh"]
 
 [ext_resource type="Script" uid="uid://8bt7uflbdq5m" path="res://scenes/main2.gd" id="1_c8sub"]
 [ext_resource type="PackedScene" uid="uid://bpkphu8qj137m" path="res://scenes/bg.tscn" id="2_r7wj8"]
@@ -15,6 +15,9 @@
 size = Vector2(2286, 97)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
+size = Vector2(9e+08, 900)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8sub"]
 size = Vector2(9e+08, 900)
 
 [node name="Main2" type="Node"]
@@ -84,6 +87,11 @@ action = "jump"
 position = Vector2(46832, 780)
 shape = SubResource("RectangleShape2D_tefeu")
 action = "duck"
+
+[node name="startgame" type="TouchScreenButton" parent="jump botton2"]
+position = Vector2(46832, -400)
+shape = SubResource("RectangleShape2D_c8sub")
+action = "ui_accept"
 
 [editable path="Bg"]
 [editable path="Ground"]
