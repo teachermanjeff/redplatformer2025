@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bju4jxwr7a0pg"]
+[gd_scene load_steps=9 format=3 uid="uid://bju4jxwr7a0pg"]
 
 [ext_resource type="Script" uid="uid://cqkhrg042ce2f" path="res://scenes/main.gd" id="1_d36gk"]
 [ext_resource type="PackedScene" uid="uid://bpkphu8qj137m" path="res://scenes/bg.tscn" id="1_qy3kl"]
@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://lotwuige1aee" path="res://scenes/game_over.tscn" id="6_6n2u1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
+size = Vector2(9e+08, 900)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6xl0"]
 size = Vector2(9e+08, 900)
 
 [node name="Main" type="Node"]
@@ -27,7 +30,11 @@ position = Vector2(576, 324)
 [node name="HUD" parent="." instance=ExtResource("5_cgpie")]
 
 [node name="StartLabel" parent="HUD" index="1"]
-text = "PRESS SPACE TO START!"
+offset_left = -1125.0
+offset_right = 1125.0
+text = "TAP THE SCREEN TO START!
+ TO JUMP (TAP THE TOP SCREEN) 
+TO DUCK (TAP THE LOWER SCREEN)"
 
 [node name="GameOver" parent="." instance=ExtResource("6_6n2u1")]
 process_mode = 2
@@ -41,5 +48,10 @@ action = "jump"
 position = Vector2(46832, 780)
 shape = SubResource("RectangleShape2D_tefeu")
 action = "duck"
+
+[node name="startgame" type="TouchScreenButton" parent="jump botton2"]
+position = Vector2(46832, -400)
+shape = SubResource("RectangleShape2D_o6xl0")
+action = "ui_accept"
 
 [editable path="HUD"]
