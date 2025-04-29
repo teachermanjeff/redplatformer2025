@@ -27,13 +27,7 @@ position = Vector2(576, 324)
 [node name="HUD" parent="." instance=ExtResource("5_cgpie")]
 
 [node name="StartLabel" parent="HUD" index="1"]
-offset_left = -524.0
-offset_top = -72.0
-offset_right = 524.0
-offset_bottom = 87.0
-text = "TAP THE SCREEN TO START!
-JUMP (TAP THE TOP OF THE SCREEN)
-DUCK (TAP THE LOWER PART OF THE SCREEN"
+text = "PRESS SPACE TO START!"
 
 [node name="GameOver" parent="." instance=ExtResource("6_6n2u1")]
 process_mode = 2
@@ -42,11 +36,6 @@ process_mode = 2
 position = Vector2(46832, -120)
 shape = SubResource("RectangleShape2D_tefeu")
 action = "jump"
-
-[node name="startgame" type="TouchScreenButton" parent="."]
-position = Vector2(46832, 320)
-shape = SubResource("RectangleShape2D_tefeu")
-action = "ui_accept"
 
 [node name="jump botton2" type="TouchScreenButton" parent="."]
 position = Vector2(46832, 780)
