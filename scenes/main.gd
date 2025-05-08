@@ -104,7 +104,7 @@ func generate_obs():
 			var obs_height = obs.get_node("Sprite2D").texture.get_height()
 			var obs_scale = obs.get_node("Sprite2D").scale
 			var obs_x : int = screen_size.x + score + 100 + (i * 100)
-			var ground_y = screen_size.y - ground_height
+			var ground_y = DINO_START_POS.y + 100 #screen_size.y - ground_height - this is old
 			var obs_y : int = ground_y - (obs_height * obs_scale.y / 2) - 5 
 			last_obs = obs
 			add_obs(obs, obs_x, obs_y)
