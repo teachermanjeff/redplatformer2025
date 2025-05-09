@@ -19,11 +19,6 @@ config/icon="res://icon.svg"
 
 globals="*res://globals.gd"
 
-[display]
-
-window/size/viewport_width=1080
-window/size/viewport_height=1920
-
 [input]
 
 jump={
