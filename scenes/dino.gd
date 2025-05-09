@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const GRAVITY : int = 4500
-const JUMP_SPEED : int = -2000
+const JUMP_SPEED : int = -2100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
